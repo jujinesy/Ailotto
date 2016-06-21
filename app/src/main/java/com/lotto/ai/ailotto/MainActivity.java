@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    int sn=2;
+    int sn=99999999;
 
 
     Button[] btn;
