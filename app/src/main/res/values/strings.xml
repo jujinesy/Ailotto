@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Ailotto</string>
+    <integer name="BuyActivity">1</integer>
+    <integer name="SPLASH_TIME_OUT">1200</integer>
+    <string name="AI1">1개 구매 (100원)</string>
+    <string name="AI5">5개 구매 (500원)</string>
+    <string name="AI10">10개 구매 (1000원)</string>
+    <string name="AI50">50개 구매 (5000원)</string>
+    <string name="AI100">100개 구매 (10000원)</string>
+    <string name="AI500">500개 구매 (50000원)</string>
+    <string name="AI1000">1000개 구매 (100000원)</string>
 </resources>

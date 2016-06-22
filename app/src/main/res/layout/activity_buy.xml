@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/buy_row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy1"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_row2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row1"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy5"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_row3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row2"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy10"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_row4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row3"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy50"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_row5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row4"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy100"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_row6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row5"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy500"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI500" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_row7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row6"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buy_btnBuy1000"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/AI1000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buy_btnCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_row7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30.0dip"
+        android:text="취소" />
+</RelativeLayout>

@@ -12,37 +12,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout3">
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Start"
-                android:id="@+id/Button08"
-                android:layout_weight="1"/>
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="충전 하기"
-                android:id="@+id/Button09"
-                android:layout_weight="1"
-                android:visibility="invisible" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="끝내기"
-                android:id="@+id/Button07"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -121,7 +92,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/logview"
@@ -129,6 +101,37 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="1dip"
                 android:background="#4cf0a1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout3">
+
+            <Button
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:text="Start"
+                android:layout_weight="1"
+                android:id="@+id/Button08"/>
+
+
+            <Button
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:text="충전 하기"
+                android:layout_weight="1"
+                android:id="@+id/Button09" />
+
+            <Button
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:text="끝내기"
+                android:layout_weight="1"
+                android:id="@+id/Button07"/>
+
         </LinearLayout>
 
     </LinearLayout>
