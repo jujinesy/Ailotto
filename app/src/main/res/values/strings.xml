@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Ailotto</string>
+    <string name="bcancel">취소</string>
     <integer name="BuyActivity">1</integer>
     <integer name="SPLASH_TIME_OUT">1200</integer>
     <string name="AI1">1개 구매 (100원)</string>
