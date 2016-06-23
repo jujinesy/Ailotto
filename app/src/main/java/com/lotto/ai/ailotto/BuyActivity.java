@@ -105,7 +105,7 @@ public class BuyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy);
-        this.mPlugin = IapPlugin.getPlugin(((Context)this), "release"); //development
+        this.mPlugin = IapPlugin.getPlugin(((Context)this), "release"); //    development    release
         this.PIDs = new ArrayList();
         this.PIDs.add("&product_id=0910053188&product_name=1회");
         this.PIDs.add("&product_id=0910053187&product_name=5회");
