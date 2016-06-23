@@ -1,11 +1,9 @@
 package com.lotto.ai.ailotto;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +12,7 @@ import android.app.Activity;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
-    int sn;
+    int AI_Point;
 
     Button[] btn;
     Button btn1, btn2, btn3;
@@ -26,13 +24,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         //Toast.makeText(getApplicationContext(),"onStart() Call.",Toast.LENGTH_LONG).show();
         if( init() == 0 )
         {
-            sn=10;
-            SavePoint(sn);
+            AI_Point = 10;
+            SavePoint(AI_Point);
         } else {
-            sn=LoadPoint();
+            AI_Point = LoadPoint();
         }
         TextView textFruit = (TextView) findViewById(R.id.numbers);
-        textFruit.setText(String.valueOf(sn));
+        textFruit.setText(String.valueOf(AI_Point));
         super.onStart();
     }
     @Override
@@ -43,7 +41,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
         TextView textFruit = (TextView) findViewById(R.id.numbers);
-        textFruit.setText(String.valueOf(sn));
+        textFruit.setText(String.valueOf(AI_Point));
 //        Button button1;
 //
 //
@@ -52,7 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 //            @Override
 //            public void onClick(View v) {
 //                TextView textFruit = (TextView) findViewById(R.id.numbers);
-//                textFruit.setText(sn);
+//                textFruit.setText(AI_Point);
 //            }
 //        });
 
@@ -100,8 +98,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     //number을 문자열로 캐스팅~
                     btn[i].setText(String.valueOf(number));
                 }
-                textFruit.setText(String.valueOf(--sn));
-                SavePoint(sn);
+                textFruit.setText(String.valueOf(--AI_Point));
+                SavePoint(AI_Point);
             }
         }else if(v == btn1){
             System.exit(0);
@@ -132,10 +130,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == getResources().getInteger(R.integer.BuyActivity) && resultCode == 200) {
-            this.sn += data.getIntExtra("AI", 0);
+            this.AI_Point += data.getIntExtra("AI", 0);
             TextView textFruit = (TextView) findViewById(R.id.numbers);
-            textFruit.setText(String.valueOf(sn));
-            SavePoint(sn);
+            textFruit.setText(String.valueOf(AI_Point));
+            SavePoint(AI_Point);
         }
     }
 
